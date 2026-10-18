@@ -1,1 +1,4 @@
-[build]\n  publish = "public"\n
+
+[build]
+  publish = "public"
+  
