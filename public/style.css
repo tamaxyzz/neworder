@@ -2,3 +2,170 @@
 .channels{margin:70px 0 0}.section-label{display:flex;align-items:center;gap:15px;color:var(--muted);font-size:14px;font-weight:950;letter-spacing:3px;margin-bottom:28px}.section-label i{height:1px;background:var(--line);flex:1}.channel-card{display:flex;align-items:center;gap:18px;text-decoration:none;color:var(--text);padding:24px 22px;margin:16px 0;border:1px solid var(--line);border-radius:30px;background:var(--panel);min-height:145px;transition:transform .2s,border-color .2s,box-shadow .2s}.channel-card:active{transform:scale(.985)}.channel-card.featured{border-color:var(--a);box-shadow:0 0 0 1px #795bff22}.channel-icon{width:76px;height:76px;flex:0 0 76px;display:grid;place-items:center;border-radius:25px;background:linear-gradient(135deg,var(--a),var(--b));color:white;font-size:34px;font-weight:900}.admin-icon{transform:rotate(-8deg);font-size:25px}.channel-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:8px}.channel-copy strong{font-size:clamp(17px,4vw,24px);line-height:1.25}.channel-copy small{font-size:clamp(13px,3.4vw,18px);color:var(--muted);line-height:1.5}.channel-arrow{font-size:38px;color:var(--muted);line-height:1}.featured .channel-arrow{color:var(--a)}.trust-footer{display:flex;justify-content:center;align-items:center;gap:13px;border-top:1px solid var(--line);margin-top:95px;padding:48px 5px 10px;color:var(--muted);font-size:16px}.trust-footer span{font-size:25px}@media(max-width:420px){main{padding:16px 11px}.channels{margin-top:58px}.channel-card{padding:18px 15px;gap:14px;min-height:125px;border-radius:26px}.channel-icon{width:62px;height:62px;flex-basis:62px;border-radius:21px;font-size:29px}.channel-copy strong{font-size:17px}.channel-copy small{font-size:14px}.themes{padding:20px 15px}#themeChoices{gap:9px}.theme-choice{font-size:14px;padding:9px;gap:8px;min-height:65px}.swatch{width:30px;height:30px;flex-basis:30px}.art{height:230px}.trust-footer{margin-top:70px;padding-top:38px;font-size:14px}}
 body[data-theme=light]{--bg:#edf1fb;--panel:#fff;--panel2:#f5f7fc;--line:#d9deec;--text:#1b2031;--muted:#69738b;--border:#b6a6ff}body[data-theme=ocean]{--bg:#06131a;--panel:#0e202b;--panel2:#091922;--line:#1b3b48;--a:#00b9d8;--b:#00e5b4;--border:#087f91}body[data-theme=purple]{--a:#a33dff;--b:#f044c8;--border:#a33dff}body[data-theme=emerald]{--a:#00c879;--b:#9cf43d;--border:#24bd83}body[data-theme=sunset]{--a:#ff713c;--b:#ffc13d;--border:#ff8746}body[data-theme=rose]{--a:#ff4d91;--b:#ff88bf;--border:#ff5b9b}body[data-theme=cyberpunk]{--a:#ff3ec9;--b:#00e5ff;--border:#b833d6}body[data-theme=nord]{--a:#81a1c1;--b:#88c0d0;--border:#81a1c1}body[data-theme=dracula]{--bg:#171521;--panel:#242235;--panel2:#191827;--line:#3b3857;--a:#bd93f9;--b:#ff79c6;--border:#bd93f9}body[data-theme=coffee]{--bg:#1c1511;--panel:#2a201a;--panel2:#211812;--line:#4a382b;--text:#f7e7d3;--muted:#bba28a;--a:#a96a3d;--b:#e0ad64;--border:#b37a4b}body[data-theme=candy]{--a:#ff68ba;--b:#8bbcff;--border:#db82ed}body[data-theme=matrix]{--bg:#050d08;--panel:#0d1911;--panel2:#07110a;--line:#1d4028;--text:#e5ffe9;--muted:#8ab996;--a:#00e65b;--b:#a6ff4d;--border:#1acb54}
 #pageLoader{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:var(--bg);color:var(--text);transition:opacity .55s ease,visibility .55s ease}#pageLoader.loader-hidden{opacity:0;visibility:hidden;pointer-events:none}#pageLoader h2{margin:5px 0 0;font-size:30px;font-weight:950}#pageLoader h2 em{background:linear-gradient(90deg,var(--a),var(--b));color:transparent;background-clip:text;font-style:normal}#pageLoader p{margin:0;text-align:center;color:var(--muted);font-size:14px}.loader-ring{width:86px;height:86px;border:6px solid var(--line);border-top-color:var(--b);border-right-color:var(--a);border-radius:50%;position:relative;animation:tamaSpin .9s linear infinite}.loader-ring span{position:absolute;inset:12px;border:4px solid transparent;border-left-color:var(--a);border-bottom-color:var(--b);border-radius:50%;animation:tamaSpin 1.25s linear infinite reverse}.loader-dots{display:flex;gap:6px}.loader-dots i{width:6px;height:6px;border-radius:50%;background:var(--b);animation:tamaPulse .8s ease-in-out infinite alternate}.loader-dots i:nth-child(2){animation-delay:.2s;background:var(--a)}.loader-dots i:nth-child(3){animation-delay:.4s}#pageLoader small{font-size:10px;font-weight:900;letter-spacing:3px;color:var(--b)}@keyframes tamaSpin{to{transform:rotate(360deg)}}@keyframes tamaPulse{to{opacity:1;transform:translateY(-4px)}}
+
+/* TAMA ORDER - COMPACT PREMIUM UPDATE */
+
+main {
+  max-width: 680px;
+  padding: 18px 14px;
+}
+
+header {
+  padding: 17px;
+  gap: 11px;
+  border-radius: 23px;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  font-size: 30px;
+  border-radius: 15px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header p {
+  font-size: 13px;
+}
+
+.buttons button {
+  padding: 12px 8px;
+  font-size: 13px;
+}
+
+.heading {
+  margin: 27px 0 14px;
+}
+
+.heading h2 {
+  font-size: 21px;
+}
+
+.heading p {
+  font-size: 14px;
+}
+
+.heading button {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+}
+
+.card {
+  flex-basis: min(84%, 420px);
+  padding: 14px;
+  border-radius: 25px;
+}
+
+.art {
+  height: 215px;
+  border-radius: 19px;
+  font-size: 72px;
+}
+
+.card h3 {
+  font-size: 19px;
+  margin: 17px 0 10px;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.priceval {
+  font-size: 20px;
+}
+
+.buy,
+.price button {
+  padding: 12px 16px;
+  font-size: 14px;
+  border-radius: 13px;
+}
+
+.channels {
+  margin-top: 48px;
+}
+
+.section-label {
+  margin-bottom: 18px;
+  font-size: 12px;
+}
+
+.channel-card {
+  min-height: 105px;
+  padding: 17px;
+  gap: 13px;
+  margin: 12px 0;
+  border-radius: 22px;
+}
+
+.channel-icon {
+  width: 54px;
+  height: 54px;
+  flex-basis: 54px;
+  border-radius: 17px;
+  font-size: 25px;
+}
+
+.channel-copy strong {
+  font-size: 16px;
+}
+
+.channel-copy small {
+  font-size: 13px;
+}
+
+.channel-arrow {
+  font-size: 30px;
+}
+
+.trust-footer {
+  margin-top: 55px;
+  padding-top: 30px;
+  font-size: 13px;
+}
+
+footer {
+  font-size: 12px;
+}
+
+/* Ukuran popup tema dan pembayaran */
+.themes,
+#modal section {
+  padding: 19px;
+  border-radius: 23px;
+}
+
+.theme-choice {
+  min-height: 56px;
+  padding: 9px;
+  gap: 9px;
+  font-size: 13px;
+  border-radius: 17px;
+}
+
+.swatch {
+  width: 27px;
+  height: 27px;
+  flex-basis: 27px;
+}
+
+/* Loading lebih proporsional */
+.loader-ring {
+  width: 68px;
+  height: 68px;
+  border-width: 5px;
+}
+
+#pageLoader h2 {
+  font-size: 25px;
+}
+
+#pageLoader p {
+  font-size: 12px;
+}
